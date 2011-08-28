@@ -10,7 +10,7 @@ To use:
 easy_install flickrapi
 easy_install pyyaml
 
-python munge.py YOUR-PHOTSET-ID
+python munge.py YOUR-PHOTOSET-ID
 
 The photo set id can be copied from the URL of the flickr photo set. That is, the right-most numeric part of the URL
 not including the slashes:
