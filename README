@@ -1,0 +1,37 @@
+munge.py uses the Flickr API web service to munge the metadata for photos in the following way:
+
+Given a single parameter, the photo set ID as input:
+
+Iterate over every photo in the set, set the title to the title of the parent photo set and set the description
+to a concatenation of basic EXIF data including: Camera make, model, aperture, shutter speed, and ISO.
+
+To use:
+
+easy_install flickrapi
+easy_install pyyaml
+
+python munge.py YOUR-PHOTSET-ID
+
+The photo set id can be copied from the URL of the flickr photo set. That is, the right-most numeric part of the URL
+not including the slashes:
+
+So for this photoset:
+
+http://www.flickr.com/photos/davidwatson/sets/72157627023466056/
+
+THe photoset id is:
+
+72157627023466056
+
+and the script command line is:
+
+python munge.py 72157627023466056
+
+You also need to create a text file named api.yaml in the same directory as the script which contains two lines:
+
+key : YOUR-KEY-GOES-HERE
+secret : YOUR-SECRET-GOES-HERE
+
+See the flickr API documentation for more information:
+
+http://librdf.org/flickcurl/api/flickcurl-auth-register.html
