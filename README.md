@@ -20,6 +20,10 @@ Create a text file named api.yaml in the same directory as the script which cont
 
     python munge.py
 
-##See the flickr API documentation for more information:
+##Warning
+
+If you have a large number of sets or photos on flickr, this script may run for hours. It will emit the set id it is processing so you can go to flickr and observe the changes as they happen.
+
+##See the flickr API doc
 
     http://librdf.org/flickcurl/api/flickcurl-auth-register.html
