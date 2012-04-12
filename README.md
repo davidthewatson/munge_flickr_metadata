@@ -1,7 +1,5 @@
 #munge.py 
 
-##uses the Flickr API web service to munge the metadata for photos
-
 * iterate over every set for the given user
 * iterate over every photo in the set
 * set the title to the title of the parent photo
