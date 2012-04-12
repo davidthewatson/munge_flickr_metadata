@@ -8,17 +8,17 @@
 * set the description to a concatenation of basic EXIF data including: Camera make, model, aperture, shutter speed, and ISO
 * set tags to the tokens used in the title and the description
 
-##To use:
+##Install
 
     easy_install flickrapi
     easy_install pyyaml
 
-* create a text file named api.yaml in the same directory as the script which contains two lines
+Create a text file named api.yaml in the same directory as the script which contains two lines
     
     key : YOUR-KEY-GOES-HERE
     secret : YOUR-SECRET-GOES-HERE
 
-##Then run:
+##Run
 
     python munge.py
 
