@@ -12,7 +12,9 @@
 
     easy_install flickrapi
     easy_install pyyaml
+
 * create a text file named api.yaml in the same directory as the script which contains two lines
+    
     key : YOUR-KEY-GOES-HERE
     secret : YOUR-SECRET-GOES-HERE
 
