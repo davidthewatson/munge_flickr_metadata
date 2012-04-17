@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Munge flickr metadata by davidthewatson</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/davidthewatson/munge_flickr_metadata">Fork On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/davidthewatson/munge_flickr_metadata/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/davidthewatson/munge_flickr_metadata/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Munge flickr metadata</h1>
+          <p>python script to munge flickr metadata using the flickr api</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/davidthewatson">davidthewatson</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>munge.py</h1>
+
+<ul>
+<li>iterate over every set for the given user</li>
+<li>iterate over every photo in the set</li>
+<li>set the title to the title of the parent photo</li>
+<li>set the description to a concatenation of basic EXIF data including: Camera make, model, aperture, shutter speed, and ISO</li>
+<li>set tags to the tokens used in the title and the description</li>
+</ul><h2>Install</h2>
+
+<pre><code>easy_install flickrapi
+easy_install pyyaml
+</code></pre>
+
+<p>Create a text file named api.yaml in the same directory as the script which contains two lines</p>
+
+<pre><code>key : YOUR-KEY-GOES-HERE
+secret : YOUR-SECRET-GOES-HERE
+</code></pre>
+
+<h2>Run</h2>
+
+<pre><code>python munge.py
+</code></pre>
+
+<h2>Warning</h2>
+
+<p>If you have a large number of sets or photos on flickr, this script may run for hours. It will emit the set id it is processing so you can go to flickr and observe the changes as they happen.</p>
+
+<h2>See the flickr API doc</h2>
+
+<pre><code><a href="http://librdf.org/flickcurl/api/flickcurl-auth-register.html">http://librdf.org/flickcurl/api/flickcurl-auth-register.html</a>
+</code></pre>
+
+<h2>Author</h2>
+
+<p><a href="http://davidwatson.org/">David Watson</a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    
+  </body>
+</html>
