@@ -27,3 +27,6 @@ If you have a large number of sets or photos on flickr, this script may run for 
 ##See the flickr API doc
 
     http://librdf.org/flickcurl/api/flickcurl-auth-register.html
+
+## Author
+<a href="http://davidwatson.org/">David Watson</a>
